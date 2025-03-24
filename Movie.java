@@ -10,7 +10,7 @@ public class Movie {
         if (title == null || title.trim().isEmpty()) {
             throw new IllegalArgumentException("Title is required.");
         }
-        if (year < 1888 || year > 2100) {
+        if (year < 1950 || year > 2025) {
             throw new IllegalArgumentException("Invalid year: " + year);
         }
         this.title = title;
